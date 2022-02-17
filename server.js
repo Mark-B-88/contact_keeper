@@ -5,6 +5,9 @@ const app = express()
 
 connectDB()
 
+// Middleware
+app.use(express.json({ extended: false }))
+
 // Routes
 app.get('/', (req,res) => {
     res.json({
