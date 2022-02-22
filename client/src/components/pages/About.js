@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
@@ -10,6 +11,11 @@ const About = () => {
             <p className='bg-dark p'>
                 <strong>Version: </strong> 1.0.0
             </p>
+            <div style={{ margin: '1rem 0' }}>
+                <a>
+                    <Link to='/'>Back to Dashboard</Link>
+                </a>
+            </div>
         </div>
     )
 }
