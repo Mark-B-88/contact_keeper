@@ -45,7 +45,7 @@ router.post('/', [
 
         // if invalid email
         if(!user) {
-            return res.status(400).json({ msg: 'Invalid Credentials!' })
+            return res.status(400).json({ msg: 'Invalid Credentials' })
         }
 
         // check the password
@@ -53,7 +53,7 @@ router.post('/', [
 
         // if invalid password
         if(!isMatch) {
-            return res.status(400).json({ msg: 'Invalid Credentials!' })
+            return res.status(400).json({ msg: 'Invalid Credentials' })
         }
 
         // json web-token, set the payload
